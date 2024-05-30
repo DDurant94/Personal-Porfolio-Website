@@ -1,0 +1,4 @@
+In this foundation for a personal website portfolio, I follow the best coding practices for HTML5 with a well-thought-out structure. 
+I’ve labeled each section and set up classes for adding CSS3 styles at a later time. My website comprises nine different pages, each 
+showcasing something different about me. It highlights my journey as a software developer and provides insights into my personality. 
+Additionally, I demonstrate the skills I’ve acquired during my time at Coding Temple and my managerial expertise in my current role.

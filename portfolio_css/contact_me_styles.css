@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  height:initial;
+  width:initial;
+}
+
+body {
+  position: inherit;
+  background-image: url(../portfolio_imagies/main_background/page_background.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  font-size: medium;
+  margin: 0%;
+}
+
+ul {
+  list-style: none;
+}
+
+body p{
+  margin: 2%;
+  text-indent: 4%;
+  font-size: 130%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+  text-wrap:wrap ;
+}
+
+/* ---------------------------------------------------------Header--------------------------------------------------------- */
+
+.container {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  max-height:min-content;
+  max-width:max-content;
+  margin: 0 auto;
+  font-family: "Tangerine",'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  font-size: 200%;
+  padding: 0%;
+}
+
+.container p {
+  font-size: 70%;
+  margin-top: 0%;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 9px;
+  left: 0%;
+  right: 0%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: inherit;
+  font-size: 150%;
+  backdrop-filter: sepia(80%);
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------sidebar------------------------------------------------------------------- */
+
+
+.icon-bar {
+  display:none;
+  background-color: #00000000;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.socials-content .dropdown {
+  position: fixed;
+  z-index: 1;
+  right: 0%;
+  top: 9.5%;
+  background-color:transparent;
+  overflow: hidden;
+}
+
+.icon-bar a {
+  margin-top: 15%;
+  float: none;
+  display: block;
+  width: inherit;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 16px;
+}
+
+.dropdown:hover .icon-bar{
+  display: block;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.github {
+  background: #000000;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.instagram {
+  background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);   
+  color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------form------------------------------------------------------------------- */
+
+.container-form *{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body .contact_me{
+  display: flex;
+  justify-content: center;
+  min-height: 750px;
+  padding: 10px;
+}
+
+.container-form{
+  display: flex;
+  max-width: 800px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-form .text{
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right, #56d8e4, #0114ea, #56d8e4, #0114ea);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-form form{
+  padding: 30px 0 0 0;
+}
+
+.container-form form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+form .form-row .textarea{
+  height: 70px;
+}
+
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #0114ea;
+}
+
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #0114ea;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #0114ea, #56d8e4, #0114ea);
+  transition: all 0.4s;
+}
+
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------Nav Bar---------------------------------------------------------------------------------- */
+
+.nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 99;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  background-color:black;
+  font-family:  'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  z-index: 99;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float:right;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  position: inherit;
+  background-color:transparent;
+  float:left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(0, 72, 255);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display:none;
+  position: sticky;
+  background-color: #f9f9f9d4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:  rgba(0, 72, 255, 0.403);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------link to top----------------------------------------------------------------- */
+.link_to_top {
+  position: fixed;
+  bottom: 1.5%;
+  right: 1%;
+  display:inline-flex;
+  background-color: rgba(0, 0, 0, 0.296);
+  padding: .07em;
+  margin: .1em;
+}
+
+.link_to_top a {
+  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  font-size: 12px;
+  font-weight: 650;
+  color:white;
+}
+
+.link_to_top:hover a{
+  background-color: rgb(0, 72, 255)
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------footer----------------------------------------------------------------- */
+.copyrights p {
+  background-color:black;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  color: rgb(254, 254, 254);
+  text-decoration: underline;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 350px){
+  html {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  nav {
+    width:100%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .submit-btn .input-data .inner{
+    width: 20%;
+    height: 80%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .container .content h1 {
+    margin: 1%;
+  }
+
+  body .contact_me{
+    min-height: 63vh;
+  }
+
+  .submit-btn .input-data .inner{
+    width: 200%;
+    height: 80%;
+  }
+
+  .container-form .text{
+    font-size: 20px;
+  }
+
+  .container-form form{
+    padding: 10px 0 0 0;
+  }
+
+  .container-form form .form-row{
+    margin: 1%;
+  }
+
+  form .form-row .input-data{
+    margin: 10px 0!important;
+  }
+
+  .submit-btn .input-data{
+    width: 50%!important;
+  }
+
+  header .content h1 {
+    font-size: 80%;
+    
+  }
+
+  header .content p {
+    font-size: 60%;
+    
+  }
+
+  .about-me-text h2 {
+    font-size: 100%;
+  }
+
+
+  body p {
+    font-size: 100%;
+    margin-bottom: 4%;
+  }
+}
